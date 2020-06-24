@@ -1,0 +1,39 @@
+body {
+  font-family: Raleway, sans-serif;
+}
+.banner {
+  background: url(../img/code-bg.jpg);
+  background-attachment: fixed;
+  padding-top: 5em;
+  padding-bottom: 1em;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.banner::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+.banner p {
+  font-size: 1.4em;
+}
+
+.avatar {
+  width: 200px;
+  border-radius: 50%;
+  display: inline-block;
+  overflow: hidden;
+}
+
+footer {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
